@@ -1,0 +1,30 @@
+<?php
+/** @var \Eleanorsoft\DesignersPage\Block\Designer $block */
+?>
+<?php $designer = $this->getDesignerById(); ?>
+<?php $helper = $this->getHelper(); ?>
+<div class="post-view">
+    <div class="post-holder-4">
+        <div class="post-content">
+            <?php if ($designer->getBanner()){?>
+            <div class="post-ftimg" style="background: #cccccc url('<?php print $helper->getImageUrl($designer->getBanner());?>') center center / cover no-repeat;">
+
+            </div>
+            <?php }?>
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <h3><?php print $designer->getFullName(); ?></h3>
+
+                    <?php print $designer->getDescription(); ?>
+
+                    <h3 style="margin:20px 0;" id="designer-list-products">Products by <?php print $designer->getFullName(); ?> </h3>
+                    <?php print $block->getProductListHtml() ?>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+

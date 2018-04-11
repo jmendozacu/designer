@@ -1,23 +1,21 @@
 <?php
-
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
 namespace Eleanorsoft\DesignersPage\Api\Data;
 
-
 /**
- * Interface DesignerInterface
- * todo: What is its purpose? What does it do?
- *
- * @package Eleanorsoft_
- * @author Pisarenko Denis <denis.pisarenko@eleanorsoft.com>
- * @copyright Copyright (c) 2018 Eleanorsoft (https://www.eleanorsoft.com/)
+ * CMS block interface.
+ * @api
+ * @since 100.0.2
  */
-
 interface DesignerInterface
 {
     /**
      * Constants for keys of data array. Identical to the name of the getter in snake case
      */
-    const ENTITY            = 'es_designers_page';
+    const ENTITY            = 'eleanorsoft_designers';
     const DESIGNER_ID       = 'designer_id';
     const FULL_NAME         = 'full_name';
     const PHOTO             = 'photo';

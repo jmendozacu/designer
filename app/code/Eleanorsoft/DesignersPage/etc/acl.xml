@@ -11,7 +11,7 @@
         <resources>
             <resource id="Magento_Backend::admin">
                 <resource id="Magento_Backend::content">
-                    <resource id="Eleanorsoft_DesignersPage::es_designer" title="Designers"/>
+                    <resource id="Eleanorsoft_DesignersPage::el_designers" title="Designers"/>
                 </resource>
             </resource>
         </resources>
